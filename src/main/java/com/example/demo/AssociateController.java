@@ -35,8 +35,14 @@ public class AssociateController {
 		associate2.setLastName("emp2");
 		associate2.setId(2);
 
+		Associate associate3 = new Associate();
+		associate3.setFirstName("emp3");
+		associate3.setLastName("emp3");
+		associate3.setId(3);
+
 		tempAssociates.add(associate1);
 		tempAssociates.add(associate2);
+		tempAssociates.add(associate3);
 		return tempAssociates;
 	}
 
