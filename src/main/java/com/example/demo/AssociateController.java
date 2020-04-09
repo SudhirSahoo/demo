@@ -17,9 +17,13 @@ public class AssociateController {
 
 	private List<Associate> associates = createList();
 	
+	@Autowired
+	AssociateRepository associateRepository;
 	
 	@RequestMapping(value = "/associates", method = RequestMethod.GET, produces = "application/json")
 	public List<Associate> firstPage() {
+		associates = associateRepository.findAll();
+		
 		return associates;
 	}
 	

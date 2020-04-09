@@ -1,11 +1,24 @@
 package com.example.demo;
 
+import javax.annotation.Generated;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "associate", schema = "kms")
 public class Associate {
 	
+	@Id
+	@Column(name="ID")
 	private Integer id;
 	
+	@Column(name="FIRST_NAME")
 	private String firstName;
 	
+	@Column(name="LAST_NAME")
 	private String lastName;
 	
 	public Associate() {
