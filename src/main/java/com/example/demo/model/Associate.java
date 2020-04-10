@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.model;
 
 import javax.annotation.Generated;
 import javax.persistence.Column;
